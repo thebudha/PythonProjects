@@ -1,0 +1,15 @@
+import subprocess
+
+completed = subprocess.run(["dir"], shell=True, capture_output=True, text=True)
+print("args", completed.args)
+print("returncode", completed.returncode)
+print("stdout", completed.stdout)
+print("stderr", completed.stderr)
+
+
+
+
+# subprocess.call
+# subprocess.check_call
+# subprocess.check_output
+# subprocess.Popen

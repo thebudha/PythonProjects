@@ -1,0 +1,11 @@
+from datetime import datetime, timedelta
+
+dt1 = datetime(2018, 1, 1) + timedelta(days=1, seconds=1000) #Adds 1 day and 1000 seconds to the datetime object
+print(dt1) #2018-01-02 00:16:40
+dt2 = datetime.now()
+
+duration = dt2 - dt1
+print(duration) #Returns a timedelta object representing the difference between the two datetime objects
+print("days", duration.days) #Returns the number of days in the timedelta object
+print("seconds", duration.seconds) #Returns the number of seconds in the timedelta object (excluding the days)
+print("total_seconds", duration.total_seconds()) #Returns the total number of seconds in the timedelta
