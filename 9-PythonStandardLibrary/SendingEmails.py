@@ -20,6 +20,6 @@ message.attach(MIMEImage(Path(r'C:\Repos\PythonProjects\completePythonMastery\9-
 with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp:
     smtp.ehlo() #Identify ourselves to the email server
     smtp.starttls() #Encrypt the connection
-    smtp.login('ketesteralpha@gmailcom', 'L3tInTh3Dud3m@n') #Login to the email server
+    smtp.login('.', '.') #Login to the email server
     smtp.send_message(message) #Send the email
     print('Email sent successfully')
