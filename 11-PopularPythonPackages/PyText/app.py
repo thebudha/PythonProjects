@@ -1,9 +1,8 @@
 from twilio.rest import Client
+import config
 
-account_sid = ""
-auth_token = ""
 
-client = Client(account_sid, auth_token)
+client = Client(config.account_sid, config.auth_token)
 
 call = client.messages.create(
     to="+13369253142",
