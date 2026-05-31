@@ -19,9 +19,9 @@ try:
 	signin_link.click()
 
 	username_box = wait.until(EC.presence_of_element_located((By.ID, 'login_field')))
-	username_box.send_keys('thebudha')
+	username_box.send_keys('username')
 	password_box = wait.until(EC.presence_of_element_located((By.ID, 'password')))
-	password_box.send_keys('1Dudeman21')
+	password_box.send_keys('password123')
 
 	signin_button = wait.until(EC.element_to_be_clickable((By.NAME, 'commit')))
 	signin_button.click()
